@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manideepika Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <h2 class="logo">Manideepika</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-image-container">
+    <img src="./images/Photo.jpg" alt="Manideepika Photo" class="hero-img">
+  </div>
+  <h1 class="hero-text">Hi, I'm <span>Manideepika</span></h1>
+  <p class="hero-sub">Final Year Student | Frontend & UI Enthusiast</p>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am <strong>Batchu Manideepika</strong>, a final year <strong>Bachelor of Technology (Computer Science and Engineering)</strong> student at 
+      <strong>Ravindra College of Engineering for Women, Kurnool</strong> with a CGPA of 8.1. I am passionate about 
+      <strong>frontend development</strong>, <strong>UI/UX design</strong>, and building efficient, user-friendly web applications.
+    </p>
+
+    <p>
+      I have hands-on experience with <strong>Java, Python (Basics), C, SQL</strong> and frontend technologies including 
+      <strong>HTML, CSS, and JavaScript</strong>. I am currently enhancing my skills through an ongoing 
+      <strong>Infosys Springboard Internship</strong>, where I am building an AI-based system to automate website testing using Python and Playwright.
+    </p>
+
+    <p>
+      I have developed projects like a <strong>Percentage and CGPA Calculator</strong>, which calculates percentages and CGPA dynamically with a responsive and interactive interface. 
+      I am also certified in <strong>Data Structures & Algorithms</strong> and <strong>Java Programming</strong>, emphasizing problem-solving and coding skills.
+    </p>
+
+    <p>
+      My objective is to contribute as a team member in a dynamic work environment, promoting business growth by providing superior value and service, while continuing to learn and grow as a developer.
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>Python (Basics)</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY (HOBBIES) ===== -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2>My Hobbies</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="./images/hobby1.jpg" alt="Playing Shuttle" onclick="openLightbox(this.src)">
+        <p>🏸 Playing Shuttle</p>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/hobby2.jpg" alt="Listening to Music" onclick="openLightbox(this.src)">
+        <p>🎧 Listening to Music</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- ===== CONTACT ===== -->
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>
+      <strong>Phone:</strong> <a href="tel:+918328182270">+91 8328182270</a><br>
+      <strong>Email:</strong> <a href="mailto:batchumanideepika@gmail.com">batchumanideepika@gmail.com</a><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/batchu-manideepika-9251362ba/" target="_blank">LinkedIn</a>
+    </p>
+
+    <a class="btn"
+       href="https://drive.google.com/file/d/1OguG-39PaY2VZlR0T0oP11lWFXc3oKfl/view"
+       target="_blank">
+       Download Resume
+    </a>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
