@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Manideepika Portfolio</title>
+  <title>Manideepika | Interactive Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,51 +10,50 @@
 
 <!-- ===== HEADER ===== -->
 <header class="header">
-  <h2 class="logo">Batchu Manideepika</h2>
+  <h2 class="logo">Manideepika</h2>
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
   </nav>
 </header>
 
 <!-- ===== HERO ===== -->
-<section id="hero">
-  <h1>Hi, I'm Manideepika</h1>
-  <p>B.Tech CSE | Aspiring Graduate Trainee Engineer</p>
+<section class="hero">
+  <div class="hero-content">
+    <!-- LEFT: Profile Image -->
+    <div class="hero-image-container">
+      <img src="./images/photo.jpeg" alt="Manideepika Photo" class="hero-img">
+    </div>
 
-  <a href="https://drive.google.com/uc?export=download&id=1OguG-39PaY2VZlR0T0oP11lWFXc3oKfl" 
-     class="resume-btn" target="_blank">
-    Download Resume
-  </a>
+    <!-- RIGHT: Text Content -->
+    <div class="hero-text-content">
+      <h1>Hi, I'm <span>Batchu Manideepika</span></h1>
+      <p class="hero-sub">Aspiring Graduate Trainee Engineer</p>
+      <p class="tagline">
+        Passionate about frontend development & building user-friendly web experiences.
+      </p>
+      <div class="quick-facts">
+        <span>💻 Java & Web</span>
+        <span>🎓 B.Tech CSE</span>
+      </div>
+      <a class="resume-btn" href="https://drive.google.com/uc?export=download&id=1OguG-39PaY2VZlR0T0oP11lWFXc3oKfl" target="_blank">
+        Download Resume
+      </a>
+    </div>
+  </div>
 </section>
 
 
 <!-- ===== ABOUT ===== -->
 <!-- ===== ABOUT ===== -->
-<section id="about" class="section">
+<section id="about" class="section fade-slide">
   <div class="container">
     <h2>About Me</h2>
     <p>
-      Hello! I am <strong>Batchu Manideepika</strong>, a final year <strong>Bachelor of Technology (Computer Science and Engineering)</strong> student at 
-      <strong>Ravindra College of Engineering for Women, Kurnool</strong> with a CGPA of 8.1. I am passionate about 
-      <strong>frontend development</strong>, <strong>UI/UX design</strong>, and building efficient, user-friendly web applications.
-    </p>
-
-    <p>
-      I have hands-on experience with <strong>Java, Python (Basics), C, SQL</strong> and frontend technologies including 
-      <strong>HTML, CSS, and JavaScript</strong>. I am currently enhancing my skills through an ongoing 
-      <strong>Infosys Springboard Internship</strong>, where I am building an AI-based system to automate website testing using Python and Playwright.
-    </p>
-
-    <p>
-      I have developed projects like a <strong>Percentage and CGPA Calculator</strong>, which calculates percentages and CGPA dynamically with a responsive and interactive interface. 
-      I am also certified in <strong>Data Structures & Algorithms</strong> and <strong>Java Programming</strong>, emphasizing problem-solving and coding skills.
-    </p>
-
-    <p>
-      My objective is to contribute as a team member in a dynamic work environment, promoting business growth by providing superior value and service, while continuing to learn and grow as a developer.
+      I am <strong>Batchu Manideepika</strong>, a final-year <strong>B.Tech (CSE)</strong> student passionate about frontend development, UI/UX design, and building interactive web applications. I have hands-on experience with <strong>Java, Python, C, SQL, HTML, CSS, and JavaScript</strong> and aim to start my career as a <strong>Graduate Trainee Engineer</strong>, contributing to innovative projects while continuously learning and growing as a developer.
     </p>
   </div>
 </section>
@@ -75,42 +74,39 @@
   </div>
 </section>
 
-<!-- ===== GALLERY (HOBBIES) ===== -->
-<section id="gallery" class="section">
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="section fade-slide">
   <div class="container">
     <h2>My Hobbies</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="./images/hobby1.jpg" alt="Playing Shuttle" onclick="openLightbox(this.src)">
+        <img src="./images/hobby1.jpg" onclick="openLightbox(this.src)">
         <p>🏸 Playing Shuttle</p>
       </div>
       <div class="gallery-item">
-        <img src="./images/hobby2.jpg" alt="Listening to Music" onclick="openLightbox(this.src)">
+        <img src="./images/hobby2.jpg" onclick="openLightbox(this.src)">
         <p>🎧 Listening to Music</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Lightbox -->
+<!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
   <img id="lightbox-img">
 </div>
 
 <!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
+<section id="contact" class="section light fade-slide">
   <div class="container">
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
     <p>
-      <strong>Phone:</strong> <a href="tel:+918328182270">+91 8328182270</a><br>
-      <strong>Email:</strong> <a href="mailto:batchumanideepika@gmail.com">batchumanideepika@gmail.com</a><br>
-      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/batchu-manideepika-9251362ba/" target="_blank">LinkedIn</a>
+      📞 <a href="tel:+918328182270">+91 8328182270</a><br>
+      📧 <a href="mailto:batchumanideepika@gmail.com">batchumanideepika@gmail.com</a><br>
+      🔗 <a href="https://www.linkedin.com/in/batchu-manideepika-9251362ba/" target="_blank">LinkedIn</a>
     </p>
-
-   
   </div>
 </section>
-
 
 <script src="script.js"></script>
 </body>
